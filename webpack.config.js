@@ -6,6 +6,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, '/dist'),
     filename: 'index_bundle.js',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -15,6 +16,10 @@ module.exports = {
         use: {
           loader: 'babel-loader',
         },
+      },
+      {
+        test: /\.(pdf|gif|png|jpe?g|svg)$/,
+        use: 'file-loader?name=[path][name].[ext]',
       },
       {
         test: /\.(png|jpg|gif)$/i,
@@ -28,6 +33,9 @@ module.exports = {
         ],
       },
     ],
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebpackPlugin({

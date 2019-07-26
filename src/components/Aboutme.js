@@ -16,11 +16,13 @@ const Aboutme = props => {
         style={{
           transform: 'rotate(90deg)',
           height: '50vh',
-          marginRight: '-50px',
+          marginRight: '-3vw',
         }}
         src={pic}
       />
-      <p style={{ marginRight: '40px' }}>{aboutJSON.about}</p>
+      <p style={{ marginRight: '40px', overflow: 'scroll' }}>
+        {aboutJSON.about}
+      </p>
     </div>
   );
 };

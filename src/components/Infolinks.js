@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 
 const Infolinks = props => {
   return (
@@ -19,6 +20,9 @@ const Infolinks = props => {
       <a href="https://github.com/wassermandh">
         <h3>Projects</h3>
       </a>
+      <Link to="/resume">
+        <h3>Resume</h3>
+      </Link>
     </div>
   );
 };
