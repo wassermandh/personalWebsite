@@ -1,16 +1,26 @@
 import React from 'react';
 const pic = require('../../misc/IMG_2306.JPG');
+const aboutJSON = require('../../misc/aboutme.json');
 
 const Aboutme = props => {
   return (
-    <div style={{ overflow: 'hidden', height: '100vh', marginTop: '20px' }}>
+    <div
+      style={{
+        overflow: 'hidden',
+        display: 'flex',
+        marginTop: '20px',
+        height: '60vh',
+      }}
+    >
       <img
         style={{
           transform: 'rotate(90deg)',
-          width: '45vw',
+          height: '50vh',
+          marginRight: '-50px',
         }}
         src={pic}
       />
+      <p style={{ marginRight: '40px' }}>{aboutJSON.about}</p>
     </div>
   );
 };
