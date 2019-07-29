@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
 import Aboutme from './Aboutme';
-import Resume from './Resume';
+import FullResumePage from './FullResumePage';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
           <Navbar />
         </div>
         <Route path="/" exact component={Aboutme} />
-        <Route path="/resume" exact component={Resume} />
+        <Route path="/resume" exact component={FullResumePage} />
       </BrowserRouter>
     );
   }
