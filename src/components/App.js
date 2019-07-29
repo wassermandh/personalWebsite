@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from './Navbar';
 import Aboutme from './Aboutme';
 import FullResumePage from './FullResumePage';
+import ProjectsPage from './ProjectsPage';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
         </div>
         <Route path="/" exact component={Aboutme} />
         <Route path="/resume" exact component={FullResumePage} />
+        <Route path="/projects" exact component={ProjectsPage} />
       </BrowserRouter>
     );
   }

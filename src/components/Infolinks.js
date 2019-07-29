@@ -17,9 +17,9 @@ const Infolinks = props => {
       <a href="https://github.com/wassermandh">
         <h3>Github</h3>
       </a>
-      <a href="https://github.com/wassermandh">
+      <Link to="/projects">
         <h3>Projects</h3>
-      </a>
+      </Link>
       <Link to="/resume">
         <h3>Resume</h3>
       </Link>
