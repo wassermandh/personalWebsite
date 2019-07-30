@@ -5,7 +5,7 @@ const ProjectsPage = props => {
   return (
     <div>
       <h1 style={{ textAlign: 'center' }}>My projects</h1>
-      <div>
+      <div id="projectsBox">
         <ProjectBlurb
           projectURL="https://github.com/wassermandh/Stackathon"
           title="Stackathon"

@@ -4,4 +4,16 @@ a {
 
 p {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15pt;
+  line-height: 1.5;
+}
+
+#projectsBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.singleProject {
+  flex-shrink: ;
 }
