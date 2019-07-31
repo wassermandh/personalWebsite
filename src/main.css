@@ -14,6 +14,22 @@ p {
   justify-content: center;
 }
 
+a:hover {
+  color: grey;
+}
+
 .singleProject {
-  flex-shrink: ;
+  margin: 10px;
+}
+
+.experienceContainer {
+  text-align: center;
+}
+
+.header {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-position: inside;
 }

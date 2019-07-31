@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 const Infolinks = props => {
   return (
     <div
+      className="infoLinks"
       style={{
         display: 'flex',
         justifyContent: 'space-around',
@@ -19,6 +20,9 @@ const Infolinks = props => {
       </a>
       <Link to="/projects">
         <h3>Projects</h3>
+      </Link>
+      <Link to="/experience">
+        <h3>Experience</h3>
       </Link>
       <Link to="/resume">
         <h3>Resume</h3>

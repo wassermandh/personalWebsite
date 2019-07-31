@@ -6,12 +6,13 @@ class Navbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      hover: true,
+      hover: false,
     };
   }
   render() {
     return (
       <div
+        id="navBar"
         style={{
           backgroundColor: 'lightBlue',
           padding: '3px',
@@ -19,7 +20,7 @@ class Navbar extends React.Component {
           overflow: 'hidden',
         }}
         onMouseEnter={() => this.setState({ hover: true })}
-        // onMouseLeave={() => this.setState({ hover: false })}
+        onMouseLeave={() => this.setState({ hover: false })}
       >
         <Link style={{ textDecoration: 'none' }} to="/">
           <h1
@@ -34,7 +35,7 @@ class Navbar extends React.Component {
         <h3 style={{ textAlign: 'center', margin: '1mm' }}>
           Software Engineer
         </h3>
-        {this.state.hover ? <InfoLinks /> : ''}
+        <InfoLinks hover={this.state.hover} />
       </div>
     );
   }

@@ -4,7 +4,6 @@ import ProjectBlurb from './ProjectBlurb';
 const ProjectsPage = props => {
   return (
     <div>
-      <h1 style={{ textAlign: 'center' }}>My projects</h1>
       <div id="projectsBox">
         <ProjectBlurb
           projectURL="https://github.com/wassermandh/Stackathon"
