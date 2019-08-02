@@ -9,9 +9,7 @@ p {
 }
 
 #projectsBox {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  border: solid;
 }
 
 a:hover {
@@ -56,4 +54,21 @@ body {
   border-radius: 50%;
   -webkit-shape-outside: circle();
   shape-outside: circle();
+}
+
+#ProjectsPageOuterContainer {
+  clear: both;
+}
+
+#ProjectsPageInnerContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#InfoLinksContainer {
+  display: flex;
+  justify-content: space-around;
+  max-width: 600px;
+  margin: 10px auto -10px auto;
 }
