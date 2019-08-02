@@ -4,25 +4,10 @@ const aboutJSON = require('../../misc/aboutme.json');
 
 const Aboutme = props => {
   return (
-    <div
-      style={{
-        overflow: 'hidden',
-        display: 'flex',
-        marginTop: '20px',
-        height: '60vh',
-      }}
-    >
-      <img
-        style={{
-          transform: 'rotate(90deg)',
-          height: '50vh',
-          marginRight: '-3vw',
-        }}
-        src={pic}
-      />
-      <p style={{ marginRight: '40px', overflow: 'scroll' }}>
-        {aboutJSON.about}
-      </p>
+    <div id="aboutMeContainer">
+      <img className="curve" src={pic} />
+      <h1>Welcome to my site!</h1>
+      <p>{aboutJSON.about}</p>
     </div>
   );
 };

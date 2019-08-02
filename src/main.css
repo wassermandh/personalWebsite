@@ -33,3 +33,27 @@ a:hover {
 ul {
   list-style-position: inside;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: pen Sans, sans-serif;
+}
+
+#aboutMeContainer {
+  margin: 20px;
+}
+
+#aboutMeContainer p {
+  line-height: 1.8;
+}
+#aboutMeContainer .curve {
+  width: 33%;
+  height: auto;
+  min-width: 150px;
+  float: left;
+  margin-right: 2rem;
+  border-radius: 50%;
+  -webkit-shape-outside: circle();
+  shape-outside: circle();
+}

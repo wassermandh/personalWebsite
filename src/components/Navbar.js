@@ -32,7 +32,7 @@ class Navbar extends React.Component {
             Daniel Wasserman
           </h1>
         </Link>
-        <h3 style={{ textAlign: 'center', margin: '1mm' }}>
+        <h3 style={{ textAlign: 'center', margin: '5px' }}>
           Software Engineer
         </h3>
         <InfoLinks hover={this.state.hover} />

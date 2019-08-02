@@ -9,7 +9,7 @@ const Infolinks = props => {
         display: 'flex',
         justifyContent: 'space-around',
         maxWidth: '600px',
-        margin: 'auto',
+        margin: '-10px auto -10px auto',
       }}
     >
       <a href="https://www.linkedin.com/in/danielharriswasserman/">
