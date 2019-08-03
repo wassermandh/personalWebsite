@@ -2,12 +2,6 @@ a {
   color: black;
 }
 
-p {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 15pt;
-  line-height: 1.5;
-}
-
 #projectsBox {
   border: solid;
 }
@@ -44,6 +38,8 @@ body {
 
 #aboutMeContainer p {
   line-height: 1.8;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15pt;
 }
 #aboutMeContainer .curve {
   width: 33%;
@@ -57,6 +53,7 @@ body {
 }
 
 #ProjectsPageOuterContainer {
+  text-align: center;
   clear: both;
 }
 
@@ -71,4 +68,22 @@ body {
   justify-content: space-around;
   max-width: 600px;
   margin: 10px auto -10px auto;
+}
+
+#navBar {
+  background-color: wheat;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  width: 85vw;
+  height: auto;
+}
+
+#navBarContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#footer {
+  text-align: center;
+  background: wheat;
 }

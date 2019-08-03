@@ -4,6 +4,7 @@ import Aboutme from './Aboutme';
 import FullResumePage from './FullResumePage';
 import ProjectsPage from './ProjectsPage';
 import ExperiencePage from './ExperiencePage';
+import Footer from './Footer';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 class App extends Component {
@@ -12,8 +13,8 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Navbar />
+          <Aboutme />
         </div>
-        <Route path="/" exact component={Aboutme} />
         <Route path="/resume" exact component={FullResumePage} />
         <Route path="/projects" exact component={ProjectsPage} />
         <Route path="/experience" exact component={ExperiencePage} />
