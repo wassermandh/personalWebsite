@@ -6,15 +6,34 @@ class ProjectBlurb extends React.Component {
     super(props);
     this.state = {
       isFlipped: false,
+      isHovering: false,
     };
     this.handleClick = this.handleClick.bind(this);
+    this.handleMouseEnter = this.handleMouseEnter.bind(this);
+    this.handleMouseLeave = this.handleMouseLeave.bind(this);
   }
   handleClick(e) {
     this.setState({ isFlipped: !this.state.isFlipped });
   }
+  handleMouseEnter(e) {
+    this.setState({ isHovering: true });
+  }
+  handleMouseLeave(e) {
+    this.setState({ isHovering: false });
+  }
   render() {
+    const visibility =
+      this.state.isHovering && !this.state.isFlipped ? 'visible' : 'hidden';
+    console.log(visibility);
     return (
-      <div className="singleProject">
+      <div
+        onMouseEnter={this.handleMouseEnter}
+        onMouseLeave={this.handleMouseLeave}
+        className="singleProject"
+      >
+        <span className="tooltiptext" style={{ visibility: visibility }}>
+          Click for more
+        </span>
         <Flippy
           flipOnClick={true}
           flipOnHover={false}
