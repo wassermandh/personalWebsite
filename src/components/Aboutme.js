@@ -13,7 +13,7 @@ const Aboutme = props => {
         <p>{aboutJSON.about}</p>
       </div>
       <div id="ProjectsPageOuterContainer">
-        <h1>My Projects</h1>
+        <h1>What I've Done</h1>
         <ProjectsPage />
       </div>
     </div>

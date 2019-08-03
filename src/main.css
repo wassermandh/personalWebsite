@@ -29,11 +29,13 @@ ul {
 body {
   margin: 0;
   padding: 0;
-  font-family: pen Sans, sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #ececec;
 }
 
 #aboutMeContainer {
   margin: 20px;
+  margin-top: 80px;
 }
 
 #aboutMeContainer p {
@@ -71,16 +73,16 @@ body {
 }
 
 #navBar {
-  background-color: wheat;
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-  width: 85vw;
+  background-color: #90ccf4;
+  width: 100vw;
   height: auto;
 }
 
 #navBarContainer {
   display: flex;
   justify-content: center;
+  position: fixed;
+  z-index: 5;
 }
 
 #footer {
