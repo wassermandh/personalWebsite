@@ -12,6 +12,7 @@ a:hover {
 
 .singleProject {
   margin: 10px;
+  max-width: 600px;
 }
 
 .experienceContainer {
@@ -102,4 +103,24 @@ body {
   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
+}
+
+.projectPic {
+  width: 100%;
+  height: 100%;
+}
+
+.innerProjectPic {
+  width: 100%;
+  height: 100%;
+}
+
+.moreInfoPics {
+  display: flex;
+  flex-direction: column;
+}
+.innerExamplePics {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5px;
 }

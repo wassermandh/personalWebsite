@@ -40,12 +40,27 @@ class ProjectBlurb extends React.Component {
           flipDirection="horizontal"
         >
           <FrontSide onClick={this.handleClick} key="front">
-            <img src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+            <img className="projectPic" src={this.props.img} />
           </FrontSide>
-          <BackSide onClick={this.handleClick} key="back">
+          <BackSide
+            style={{ overflow: 'scroll' }}
+            onClick={this.handleClick}
+            key="back"
+          >
             <a href={this.props.projectURL}>
               <h3>{this.props.title}</h3>
             </a>
+            <div className="moreInfoPics">
+              {this.props.examplePics.map((pic, idx) => {
+                return (
+                  <img
+                    key={idx.toString()}
+                    src={pic}
+                    className="innerExamplePics"
+                  />
+                );
+              })}
+            </div>
             <p>{this.props.info}</p>
           </BackSide>
         </Flippy>
