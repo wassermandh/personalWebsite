@@ -14,8 +14,11 @@ const cityPicsExampleArray = [
 const yourWorld1 = require('../../misc/yourWorld1.PNG');
 const yourWorld2 = require('../../misc/yourWorld2.PNG');
 const yourWorld3 = require('../../misc/yourWorld3.PNG');
-
 const yourWorldExampleArray = [yourWorld2, yourWorld1, yourWorld3];
+const knownyc1 = require('../../misc/knownyc1.PNG');
+const knownyc2 = require('../../misc/knownyc2.PNG');
+const knownyc3 = require('../../misc/knownyc3.PNG');
+const knowNYCExamplesArray = [knownyc1, knownyc2, knownyc3];
 
 const ProjectsPage = props => {
   return (
@@ -28,7 +31,7 @@ const ProjectsPage = props => {
         img={cityPicsPic}
       />
       <ProjectBlurb
-        examplePics={cityPicsExampleArray}
+        examplePics={knowNYCExamplesArray}
         projectURL="knownyc.co"
         title="Know NYC"
         info="this is know nyc"
