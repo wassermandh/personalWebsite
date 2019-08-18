@@ -47,9 +47,24 @@ class ProjectBlurb extends React.Component {
             onClick={this.handleClick}
             key="back"
           >
-            <a href={this.props.projectURL}>
-              <h3>{this.props.title}</h3>
-            </a>
+            <h3>{this.props.title}</h3>
+            <p>{this.props.info}</p>
+            <div className="projectLinksBox">
+              <a
+                className="projectLink"
+                target="blank"
+                href={this.props.deployedURL}
+              >
+                Deployed Link
+              </a>
+              <a
+                className="projectLink"
+                target="blank"
+                href={this.props.githubURL}
+              >
+                Github Link
+              </a>
+            </div>
             <div className="moreInfoPics">
               {this.props.examplePics.map((pic, idx) => {
                 return (
@@ -61,7 +76,6 @@ class ProjectBlurb extends React.Component {
                 );
               })}
             </div>
-            <p>{this.props.info}</p>
           </BackSide>
         </Flippy>
       </div>

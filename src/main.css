@@ -124,3 +124,13 @@ body {
   height: 100%;
   margin-bottom: 5px;
 }
+
+.projectLinksBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.projectLink {
+  margin: 5px;
+}
