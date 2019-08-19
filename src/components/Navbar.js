@@ -11,29 +11,25 @@ class Navbar extends React.Component {
   }
   render() {
     return (
-      <div id="navBarContainer">
-        <div
-          id="navBar"
-          onMouseEnter={() => this.setState({ hover: true })}
-          onMouseLeave={() => this.setState({ hover: false })}
-        >
-          <div>
-            <Link style={{ textDecoration: 'none' }} to="/">
-              <h1
-                style={{
-                  textAlign: 'center',
-                  margin: '1mm',
-                }}
-              >
-                Daniel Wasserman
-              </h1>
-            </Link>
+      <div
+        id="navBar"
+        onMouseEnter={() => this.setState({ hover: true })}
+        onMouseLeave={() => this.setState({ hover: false })}
+      >
+        <Link style={{ textDecoration: 'none' }} to="/">
+          <h1
+            style={{
+              textAlign: 'center',
+              margin: '1mm',
+            }}
+          >
+            Daniel Wasserman
+          </h1>
+        </Link>
 
-            <h3 style={{ textAlign: 'center', margin: '5px' }}>
-              Software Engineer
-            </h3>
-          </div>
-        </div>
+        <h3 style={{ textAlign: 'center', margin: '5px' }}>
+          Software Engineer
+        </h3>
       </div>
     );
   }

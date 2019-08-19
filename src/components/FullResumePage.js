@@ -4,16 +4,9 @@ import Resume from './Resume';
 
 const FullResumePage = props => {
   return (
-    <div
-      style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
-    >
-      <Link
-        style={{ margin: '10px' }}
-        to="../../misc/Daniel_Wasserman.pdf"
-        target="_blank"
-        download
-      >
-        Click to Download
+    <div id="resumeContainer">
+      <Link to="../../misc/Daniel_Wasserman.pdf" target="_blank" download>
+        <h2>Click to Download</h2>
       </Link>
       <Resume />
     </div>

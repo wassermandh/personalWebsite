@@ -77,11 +77,8 @@ body {
   background-color: #90ccf4;
   width: 100vw;
   height: auto;
-}
-
-#navBarContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   position: fixed;
   z-index: 5;
 }
@@ -133,4 +130,33 @@ body {
 
 .projectLink {
   margin: 5px;
+}
+
+#sidebar {
+  position: fixed;
+  background: black;
+  flex-direction: row;
+  display: flex;
+  opacity: 0.7;
+  bottom: 0;
+  z-index: 5;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.sidebarLink {
+  margin: 25px;
+  color: white;
+}
+
+.madeWithReact {
+  color: white;
+  margin: 25px;
+}
+
+#resumeContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  align-items: center;
 }
