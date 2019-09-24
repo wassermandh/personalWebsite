@@ -2,20 +2,24 @@ import React from 'react';
 const pic = require('../../misc/IMG_2306.JPG');
 import ProjectsPage from '../components/ProjectsPage';
 const aboutJSON = require('../../misc/aboutme.json');
+import Sidebar from '../components//Sidebar';
 
 const Aboutme = props => {
   return (
     <div>
-      <br />
-      <div id="aboutMeContainer">
-        <img className="curve" src={pic} />
-        <h1>Welcome to my site!</h1>
-        <p>{aboutJSON.about}</p>
+      <div>
+        <br />
+        <div id="aboutMeContainer">
+          <img className="curve" src={pic} />
+          <h1>Welcome to my site!</h1>
+          <p>{aboutJSON.about}</p>
+        </div>
+        <div id="ProjectsPageOuterContainer">
+          <h1>What I've Done</h1>
+          <ProjectsPage />
+        </div>
       </div>
-      <div id="ProjectsPageOuterContainer">
-        <h1>What I've Done</h1>
-        <ProjectsPage />
-      </div>
+      <Sidebar />
     </div>
   );
 };

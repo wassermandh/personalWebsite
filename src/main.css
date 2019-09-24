@@ -64,6 +64,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 70px;
 }
 
 #InfoLinksContainer {
@@ -142,6 +143,7 @@ body {
   z-index: 5;
   width: 100%;
   justify-content: space-around;
+  margin-top: 5px;
 }
 
 .sidebarLink {

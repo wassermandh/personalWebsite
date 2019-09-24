@@ -14,7 +14,6 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Navbar />
-          <Sidebar />
         </div>
         <Route path="/resume" exact component={FullResumePage} />
         <Route path="/" exact component={Aboutme} />
