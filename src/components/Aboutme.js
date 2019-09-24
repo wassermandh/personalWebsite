@@ -1,8 +1,8 @@
 import React from 'react';
-const pic = require('../../misc/IMG_2306.JPG');
-import ProjectsPage from '../components/ProjectsPage';
-const aboutJSON = require('../../misc/aboutme.json');
-import Sidebar from '../components//Sidebar';
+const pic = require('./misc/IMG_2306.JPG');
+import ProjectsPage from './ProjectsPage';
+const aboutJSON = require('./misc/aboutme.json');
+import Sidebar from './Sidebar';
 
 const Aboutme = props => {
   return (

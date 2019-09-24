@@ -1,23 +1,23 @@
 import React from 'react';
 import ProjectBlurb from './ProjectBlurb';
-const knowNYCPic = require('../../misc/knownyc.PNG');
-const yourWorldPic = require('../../misc/yourWorldPic.PNG');
-const cityPicsPic = require('../../misc/city-pics.PNG');
-const cityPicsExample1 = require('../../misc/citypics3.PNG');
-const cityPicsExample2 = require('../../misc/citypics2.PNG');
-const cityPicsExamlpe3 = require('../../misc/citypics3.PNG');
+const knowNYCPic = require('./misc/knownyc.PNG');
+const yourWorldPic = require('./misc/yourWorldPic.PNG');
+const cityPicsPic = require('./misc/city-pics.PNG');
+const cityPicsExample1 = require('./misc/citypics3.PNG');
+const cityPicsExample2 = require('./misc/citypics2.PNG');
+const cityPicsExamlpe3 = require('./misc/citypics3.PNG');
 const cityPicsExampleArray = [
   cityPicsExample1,
   cityPicsExample2,
   cityPicsExamlpe3,
 ];
-const yourWorld1 = require('../../misc/yourWorld1.PNG');
-const yourWorld2 = require('../../misc/yourWorld2.PNG');
-const yourWorld3 = require('../../misc/yourWorld3.PNG');
+const yourWorld1 = require('./misc/yourWorld1.PNG');
+const yourWorld2 = require('./misc/yourWorld2.PNG');
+const yourWorld3 = require('./misc/yourWorld3.PNG');
 const yourWorldExampleArray = [yourWorld2, yourWorld1, yourWorld3];
-const knownyc1 = require('../../misc/knownyc1.PNG');
-const knownyc2 = require('../../misc/knownyc2.PNG');
-const knownyc3 = require('../../misc/knownyc3.PNG');
+const knownyc1 = require('./misc/knownyc1.PNG');
+const knownyc2 = require('./misc/knownyc2.PNG');
+const knownyc3 = require('./misc/knownyc3.PNG');
 const knowNYCExamplesArray = [knownyc1, knownyc2, knownyc3];
 
 const ProjectsPage = props => {

@@ -6,7 +6,7 @@ Built with React.
 
 Pictures: <br/>
 
-- ![Pic1](./misc/personal_site_1.png)
-- ![Pic2](./misc/personal_site_3.png)
-- ![Pic3](./misc/personal_site_2.png)
-- ![Pic4](./misc/personal_site_4.png)
+- ![Pic1](./src/components/misc/personal_site_1.png)
+- ![Pic2](./src/components/misc/personal_site_1.png)
+- ![Pic3](./src/components/misc/personal_site_1.png)
+- ![Pic4](./src/components/misc/personal_site_1.png)
