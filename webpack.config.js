@@ -47,6 +47,6 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html',
     }),
-    new CopyPlugin([{ from: 'static', to: 'dist' }]),
+    new CopyPlugin([{ from: 'static', to: 'dist/static' }]),
   ],
 };

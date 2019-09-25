@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectsPage from './ProjectsPage';
-const aboutJSON = require('../../misc/aboutme.json');
+const aboutJSON = require('./aboutme.json');
 import Sidebar from './Sidebar';
 
 const Aboutme = props => {
@@ -9,7 +9,7 @@ const Aboutme = props => {
       <div>
         <br />
         <div id="aboutMeContainer">
-          <img className="curve" src="/misc/IMG_2306.JPG" />
+          <img className="curve" src="/static/IMG_2306.JPG" />
           <h1>Welcome to my site!</h1>
           <p>{aboutJSON.about}</p>
         </div>
