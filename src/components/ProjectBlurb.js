@@ -50,13 +50,16 @@ class ProjectBlurb extends React.Component {
             <h3>{this.props.title}</h3>
             <p>{this.props.info}</p>
             <div className="projectLinksBox">
-              <a
-                className="projectLink"
-                target="blank"
-                href={this.props.deployedURL}
-              >
-                Deployed Link
-              </a>
+              <div>
+                <a
+                  className="projectLink"
+                  target="blank"
+                  href={this.props.deployedURL}
+                >
+                  Deployed Link
+                </a>
+              </div>
+
               <a
                 className="projectLink"
                 target="blank"
